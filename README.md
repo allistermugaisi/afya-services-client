@@ -1,0 +1,2 @@
+# afya-services-client
+Afya is derived from a Swahili word that means “health” Afya Services LLC was founded by CEO Phina Mayu, a Nurse Practitioner specializing in Adult-Geriatric population (AG-NP) in 5/2020. It is destined to provide preventative services and check-up services, to immunizations to all adults ages 18 years and above. Our providers are happy to keep you and your family healthy and strong.

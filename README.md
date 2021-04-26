@@ -2,11 +2,11 @@
 
 Afya is derived from a Swahili word that means “health” Afya Services LLC was founded by CEO Phina Mayu, a Nurse Practitioner specializing in Adult-Geriatric population (AG-NP) in 5/2020. It is destined to provide preventative services and check-up services, to immunizations to all adults ages 18 years and above. Our providers are happy to keep you and your family healthy and strong.
 
-# afya-services-client is developed using React App
+### afya-services-client is developed using React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 

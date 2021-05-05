@@ -114,7 +114,7 @@
 .nav-logo,
 .nav-link,
 .nav-toggle {
-	color: var(--nav-text-color);
+	color: var(--text-color);
 	font-weight: var(--font-medium);
 }
 .nav-scroll-logo,
@@ -146,7 +146,7 @@
 	color: var(--first-color);
 }
 
-.nav-toggle {
+.bx-menu {
 	/* font-size: 1.6rem; */
 	cursor: pointer;
 }
@@ -160,11 +160,10 @@
 .header-section {
 	position: relative;
 	height: 600px;
-	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3)),
-		url('../../images/landing.jpg');
+	background: url('../../images/landing.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	transform: scaleX(-1);
+	/* transform: scaleX(-1); */
 }
 .halfway-section {
 	position: relative;
@@ -183,8 +182,8 @@
 	width: 65%;
 	border-radius: 7px;
 	transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-	box-shadow: rgb(145 158 171 / 24%) 0px 0px 2px 0px,
-		rgb(145 158 171 / 24%) 0px 16px 32px -4px;
+	box-shadow: 0px 0px 0px 0.5px rgba(50, 50, 93, 0.1),
+		0px 2px 5px 0px rgba(50, 50, 93, 0.1), 0px 1px 1.5px 0px rgba(0, 0, 0, 0.07);
 }
 /*========== BUTTONS ==========*/
 .button {
@@ -200,8 +199,13 @@
 	background-color: var(--first-color-alt);
 }
 
-.change-theme {
-	color: var(--nav-text-color);
+.change-theme,
+.change-theme-scroll {
+	position: absolute;
+	right: 1rem;
+	top: 1.8rem;
+	font-size: 1rem;
+	cursor: pointer;
 }
 /* Scroll top */
 .scrolltop {
@@ -246,12 +250,12 @@
 
 .section-title {
 	font-size: var(--h1-font-size);
-	color: var(--title-color);
+	color: var(--text-color);
 	margin-bottom: var(--mb-3);
 }
 .team-title {
 	font-size: var(--h2-font-size);
-	color: var(--title-color);
+	color: var(--text-color);
 	margin-bottom: var(--mb-3);
 }
 
@@ -298,7 +302,7 @@
 
 .objective-title {
 	font-size: var(--h3-font-size);
-	color: var(--title-color);
+	color: var(--text-color);
 	margin-bottom: var(--mb-1);
 }
 
@@ -333,7 +337,7 @@
 .services-subtitle {
 	display: block;
 	font-size: var(--h3-font-size);
-	color: var(--title-color);
+	color: var(--text-color);
 	font-weight: var(--font-medium);
 }
 .services-description {
@@ -509,7 +513,7 @@
 .features-main > h1 {
 	margin-bottom: 40px;
 	font-weight: var(--font-medium);
-	color: var(--title-color);
+	color: var(--text-color);
 	font-size: 40px;
 	text-align: center;
 }

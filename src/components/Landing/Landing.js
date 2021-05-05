@@ -2,11 +2,25 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ImageSlider from '../ImageSlider/ImageSlider';
 import { SliderData } from '../ImageSlider/SliderData';
+import { TextField } from '@material-ui/core';
+import { useForm } from 'react-hook-form';
+import AdornedButton from '../../utils/AdornedButton';
 import './Landing.css';
 
 const Landing = () => {
 	const [toggled, setToggled] = useState(false);
 	const [scrollHeader, setScrollHeader] = useState(false);
+	const [buttonLoading, setButtonLoading] = useState(false);
+
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm({
+		mode: 'all',
+		shouldUnregister: true,
+		shouldFocusError: true,
+	});
 
 	useEffect(() => {
 		if (typeof window !== 'undefined') {
@@ -15,6 +29,12 @@ const Landing = () => {
 			);
 		}
 	}, []);
+
+	const onSubmit = (data, e) => {
+		e.preventDefault();
+		setButtonLoading(true);
+		console.log(data);
+	};
 
 	return (
 		<>
@@ -300,9 +320,9 @@ const Landing = () => {
 							<br />
 							We do not provide long term plan management.
 						</p>
-						<Link to="/policy" className="button">
+						{/* <Link to="/policy" className="button">
 							Explore Policy
-						</Link>
+						</Link> */}
 					</div>
 
 					<img src="" alt="" className="policy-img" />
@@ -362,6 +382,96 @@ const Landing = () => {
 						A film studio that is centered towards entertainment, and
 						educational purposes and business cooperation, was our main idea.
 					</p>
+				</div>
+			</section>
+
+			{/* <!--========== CONTACT US ==========--> */}
+			<section class="contact section bd-container" id="contact">
+				<div class="contact__container bd-grid">
+					<div class="contact__data">
+						<span class="section-subtitle contact__initial">Let's talk</span>
+						<h2 class="section-title contact__initial">Contact us</h2>
+						<p class="contact__description">
+							Want to get in touch? We'd love to hear from you. Here is how you
+							can reach us...
+						</p>
+					</div>
+
+					<div class="contact__button">
+						<form onSubmit={handleSubmit(onSubmit)} className="login-form">
+							<div className="textField-container">
+								<TextField
+									{...register('name', {
+										required: 'Name id is required!',
+										shouldFocus: true,
+									})}
+									name="name"
+									type="text"
+									variant="outlined"
+									label="Name"
+									margin="normal"
+									autoComplete="off"
+									fullWidth
+									error={errors?.name ? true : false}
+									helperText={errors?.name?.message}
+								/>
+
+								<TextField
+									{...register('email', {
+										required: 'Email id is required!',
+										shouldFocus: true,
+									})}
+									name="email"
+									type="text"
+									variant="outlined"
+									label="Email"
+									margin="normal"
+									autoComplete="off"
+									fullWidth
+									error={errors?.email ? true : false}
+									helperText={errors?.email?.message}
+								/>
+
+								<TextField
+									{...register('message', {
+										required: 'Message id is required!',
+										shouldFocus: true,
+									})}
+									name="message"
+									type="text"
+									variant="outlined"
+									label="Message"
+									margin="normal"
+									multiline
+									rows={4}
+									rowsMax={4}
+									autoComplete="off"
+									fullWidth
+									error={errors?.message ? true : false}
+									helperText={errors?.message?.message}
+								/>
+
+								<AdornedButton
+									// fullWidth
+									disableElevation
+									size="large"
+									type="submit"
+									color="primary"
+									style={{ marginTop: '1rem' }}
+									disabled={buttonLoading ? true : false}
+									loading={buttonLoading}
+									variant="contained"
+								>
+									submit
+								</AdornedButton>
+							</div>
+							<div>
+								<p className="register-link">
+									We will get back to you at the earliest!
+								</p>
+							</div>
+						</form>
+					</div>
 				</div>
 			</section>
 

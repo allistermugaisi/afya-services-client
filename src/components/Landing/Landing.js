@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import ImageSlider from '../ImageSlider/ImageSlider';
+import { SliderData } from '../ImageSlider/SliderData';
 import './Landing.css';
 
 const Landing = () => {
@@ -50,7 +52,7 @@ const Landing = () => {
 							</li>
 							<li className="nav-item">
 								<Link
-									to="/services"
+									to="/about"
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 								>
 									Services
@@ -58,18 +60,18 @@ const Landing = () => {
 							</li>
 							<li className="nav-item">
 								<Link
-									to="/blog"
+									to="/services"
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 								>
-									Blog
+									Policy
 								</Link>
 							</li>
 							<li className="nav-item">
 								<Link
-									to="/about"
+									to="/blog"
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 								>
-									About
+									Contact us
 								</Link>
 							</li>
 							<li className="nav-item">
@@ -77,15 +79,15 @@ const Landing = () => {
 									to="/contact"
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 								>
-									Contact us
+									FAQ
 								</Link>
 							</li>
 
-							<li className="sign-button">
+							{/* <li className="sign-button">
 								<Link to="/signin" className="button">
 									Sign in
 								</Link>
-							</li>
+							</li> */}
 
 							<li>
 								<i
@@ -152,6 +154,51 @@ const Landing = () => {
 							Afya Services LLC is dedicated to providing compassionate,
 							non-judgmental and collaborative quality care to meet the needs of
 							each individual.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			{/* <!-- =====Why Us===== --> */}
+			<section class="features-main my-2">
+				<h1>Why us?</h1>
+				<div class="features-container grid grid-3">
+					<div class="card flex">
+						<i class="fas fa-film fa-3x"></i>
+						<p>
+							Producing content that serves to inform, entertain and educate the
+							masses. Content that serves to show the best aspects of humanity.
+						</p>
+					</div>
+					<div class="card flex">
+						<i class="fas fa-network-wired fa-3x"></i>
+						<p>
+							Directing content that is encouraging to our audiences and derives
+							the best form of pleasure and satisfaction.
+						</p>
+					</div>
+					<div class="card flex">
+						<i class="fas fa-camera-retro fa-3x"></i>
+						<p>
+							Mentoring young talent into becoming the best version of
+							themselves when it comes to acting.
+						</p>
+					</div>
+					<div class="card flex">
+						<i class="far fa-file-alt fa-3x"></i>
+						<p>
+							To create campaigns that bring awareness to the masses through a
+							wide range of broadcast option.
+						</p>
+					</div>
+					<div class="card flex">
+						<i class="fas fa-podcast fa-3x"></i>
+						<p>Mission statement. True, real and inspiring.</p>
+					</div>
+					<div class="card flex">
+						<i class="fas fa-radiation fa-3x"></i>
+						<p>
+							Target audience. Young youths between the ages of 20-25 years.
 						</p>
 					</div>
 				</div>
@@ -230,6 +277,8 @@ const Landing = () => {
 				</div>
 			</section>
 
+			<ImageSlider slides={SliderData} />
+
 			{/* <!--========== POLICY ==========--> */}
 			<section className="policy section bd-container" id="policy">
 				<div className="policy-container bd-grid">
@@ -257,6 +306,62 @@ const Landing = () => {
 					</div>
 
 					<img src="" alt="" className="policy-img" />
+				</div>
+			</section>
+
+			{/* <!-- Our team --> */}
+			<section class="team-section">
+				<h1>Our Team</h1>
+				<span class="border"></span>
+				<div class="ps">
+					<>
+						<Link to="#p1">
+							<img
+								src="https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80"
+								alt="member 1"
+							/>
+						</Link>
+						<Link to="#p2">
+							<img
+								src="https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80"
+								alt="member 2"
+							/>
+						</Link>
+						<Link to="#p3">
+							<img
+								src="https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80"
+								alt="member 3"
+							/>
+						</Link>
+					</>
+				</div>
+
+				<div class="card-section" id="p1">
+					<span class="name">Grace</span>
+					<span class="border"></span>
+					<p>
+						From encouraging Kenyan movies and series to outstanding production
+						of commercials and reality shows. We believe entertainment produces
+						content that ignites pleasure and satisfaction from the audience.
+					</p>
+				</div>
+				<div class="card-section" id="p2">
+					<span class="name">Ethan</span>
+					<span class="border"></span>
+					<p>
+						To educate and inspire the masses for an impactful change in the
+						society, was our key mission of starting our studio. This is through
+						powerful features and documentaries that touch on human aspects of
+						life.
+					</p>
+				</div>
+				<div class="card-section" id="p3">
+					<span class="name">Stephanie</span>
+					<span class="border"></span>
+					<p>
+						A film studio that is centered towards entertainment, and
+						educational purposes and business cooperation, was our main idea.
+					</p>
 				</div>
 			</section>
 

@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import { Landing, Login, Payment } from './components';
+import { Landing } from './components';
 import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 
@@ -31,8 +31,8 @@ function App() {
 				<ThemeProvider theme={theme}>
 					<Switch>
 						<Route exact path="/" component={Landing} />
-						<Route path="/signin" component={Login} />
-						<Route path="/payment" component={Payment} />
+						{/* <Route path="/signin" component={Login} />
+						<Route path="/payment" component={Payment} /> */}
 					</Switch>
 				</ThemeProvider>
 			</div>

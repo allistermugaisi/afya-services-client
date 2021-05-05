@@ -133,18 +133,16 @@
 	height: auto;
 }
 
-.nav-logo:hover {
-	color: var(--first-color);
-}
-
 .nav-link,
 .nav-scroll-link {
 	/* transition: 0.3s */
 	transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
+.nav-logo:hover,
 .nav-link:hover,
-.nav-scroll-link:hover {
+.nav-scroll-link:hover,
+.nav-scroll-logo:hover {
 	color: var(--first-color);
 }
 

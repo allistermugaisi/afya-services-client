@@ -82,7 +82,7 @@ const Landing = () => {
 							</li>
 
 							<li className="sign-button">
-								<Link to="/" className="button">
+								<Link to="/signin" className="button">
 									Sign in
 								</Link>
 							</li>

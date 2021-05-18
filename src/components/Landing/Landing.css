@@ -6,10 +6,10 @@
 	--header-height: 3rem;
 
 	/*========== Colors ==========*/
-	--first-color: #069c54;
-	--first-color-alt: #048654;
+	--first-color: #00db1a;
+	--first-color-alt: #00db1a;
 	--background-icon-color: #c3f6c3;
-	--icon-color: #1bb21b;
+	--icon-color: #00db1a;
 	--title-color: #393939;
 	--text-color: rgb(33, 43, 54);
 	--nav-text-color: #ffffff;
@@ -153,7 +153,7 @@
 
 /* Active menu */
 .active-link {
-	color: #00ab55;
+	color: var(--first-color);
 }
 /* Header Section */
 
@@ -164,6 +164,21 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	/* transform: scaleX(-1); */
+}
+.inner-header {
+	margin: 1rem 3rem;
+}
+.inner-header > h3 {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 1.2rem;
+	font-size: 2.5rem;
+	font-weight: 450;
+}
+.inner-header > p {
+	font-size: 1.2rem;
+	font-weight: 430;
 }
 .halfway-section {
 	position: relative;
@@ -190,11 +205,11 @@
 	display: inline-block;
 	background-color: var(--first-color);
 	color: #fff;
+	margin-top: 1rem;
 	padding: 0.45rem 1rem;
 	border-radius: 0.5rem;
 	transition: 0.3s;
 }
-
 .button:hover {
 	background-color: var(--first-color-alt);
 }
@@ -344,6 +359,7 @@
 	font-size: var(--small-font-size);
 }
 /*========== POLICY ==========*/
+
 .policy-data {
 	text-align: center;
 }
@@ -353,7 +369,7 @@
 }
 
 .policy-img {
-	width: 280px;
+	width: 16em;
 	border-radius: 0.5rem;
 	justify-self: center;
 }
@@ -678,5 +694,9 @@
 	}
 	.contact__button {
 		justify-self: center;
+	}
+	.call-button {
+		margin: 1rem auto;
+		width: 50%;
 	}
 }

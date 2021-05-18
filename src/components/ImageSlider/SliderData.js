@@ -1,22 +1,22 @@
+import logo from '../../images/main-logo.jpeg';
+
 export const SliderData = [
 	{
-		image:
-			'https://images.unsplash.com/photo-1546768292-fb12f6c92568?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+		image: `${logo}`,
 	},
 	{
 		image:
-			'https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80',
+			'https://images.unsplash.com/photo-1516841273335-e39b37888115?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGhlYWx0aGNhcmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
 	},
 	{
 		image:
-			'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+			'https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzR8fG51cnNlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
+	},
+	{
+		image: 'https://afyaservices.us/wp-content/uploads/2020/06/2-575x1024.png',
 	},
 	{
 		image:
-			'https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80',
-	},
-	{
-		image:
-			'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
+			'https://images.unsplash.com/photo-1542884748-2b87b36c6b90?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bnVyc2V8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
 	},
 ];

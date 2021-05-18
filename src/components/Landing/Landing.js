@@ -75,7 +75,7 @@ const Landing = () => {
 									to="/about"
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 								>
-									Services
+									Explore
 								</Link>
 							</li>
 							<li className="nav-item">
@@ -83,7 +83,7 @@ const Landing = () => {
 									to="/services"
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 								>
-									Policy
+									Why us?
 								</Link>
 							</li>
 							<li className="nav-item">
@@ -91,7 +91,7 @@ const Landing = () => {
 									to="/blog"
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 								>
-									Contact us
+									Services
 								</Link>
 							</li>
 							<li className="nav-item">
@@ -99,15 +99,9 @@ const Landing = () => {
 									to="/contact"
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 								>
-									FAQ
+									Contact
 								</Link>
 							</li>
-
-							{/* <li className="sign-button">
-								<Link to="/signin" className="button">
-									Sign in
-								</Link>
-							</li> */}
 
 							<li>
 								<i
@@ -131,7 +125,20 @@ const Landing = () => {
 				</nav>
 			</div>
 			<section className="header-section section">
-				<h3>landing</h3>
+				<div className="inner-header">
+					<h3>
+						Your health care journey
+						<br /> starts here
+					</h3>
+					<p>Care In An Environment of excellence</p>
+					<ul>
+						<li className="sign-button">
+							<Link to="/" className="button">
+								Get started
+							</Link>
+						</li>
+					</ul>
+				</div>
 			</section>
 
 			<div className="halfway-section">
@@ -325,63 +332,11 @@ const Landing = () => {
 						</Link> */}
 					</div>
 
-					<img src="" alt="" className="policy-img" />
-				</div>
-			</section>
-
-			{/* <!-- Our team --> */}
-			<section class="team-section">
-				<h1>Our Team</h1>
-				<span class="border"></span>
-				<div class="ps">
-					<>
-						<Link to="#p1">
-							<img
-								src="https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80"
-								alt="member 1"
-							/>
-						</Link>
-						<Link to="#p2">
-							<img
-								src="https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80"
-								alt="member 2"
-							/>
-						</Link>
-						<Link to="#p3">
-							<img
-								src="https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80"
-								alt="member 3"
-							/>
-						</Link>
-					</>
-				</div>
-
-				<div class="card-section" id="p1">
-					<span class="name">Grace</span>
-					<span class="border"></span>
-					<p>
-						From encouraging Kenyan movies and series to outstanding production
-						of commercials and reality shows. We believe entertainment produces
-						content that ignites pleasure and satisfaction from the audience.
-					</p>
-				</div>
-				<div class="card-section" id="p2">
-					<span class="name">Ethan</span>
-					<span class="border"></span>
-					<p>
-						To educate and inspire the masses for an impactful change in the
-						society, was our key mission of starting our studio. This is through
-						powerful features and documentaries that touch on human aspects of
-						life.
-					</p>
-				</div>
-				<div class="card-section" id="p3">
-					<span class="name">Stephanie</span>
-					<span class="border"></span>
-					<p>
-						A film studio that is centered towards entertainment, and
-						educational purposes and business cooperation, was our main idea.
-					</p>
+					<img
+						src="https://afyaservices.us/wp-content/uploads/2020/06/happy1.jpg"
+						alt="policy"
+						className="policy-img"
+					/>
 				</div>
 			</section>
 
@@ -395,6 +350,21 @@ const Landing = () => {
 							Want to get in touch? We'd love to hear from you. Here is how you
 							can reach us...
 						</p>
+						<div className="call-button">
+							<AdornedButton
+								// fullWidth
+								disableElevation
+								size="large"
+								type="submit"
+								color="primary"
+								style={{ marginTop: '1rem' }}
+								disabled={buttonLoading ? true : false}
+								loading={buttonLoading}
+								variant="contained"
+							>
+								Call us on +1-401-384-7971
+							</AdornedButton>
+						</div>
 					</div>
 
 					<div class="contact__button">
@@ -402,7 +372,7 @@ const Landing = () => {
 							<div className="textField-container">
 								<TextField
 									{...register('name', {
-										required: 'Name id is required!',
+										required: 'Name is required!',
 										shouldFocus: true,
 									})}
 									name="name"
@@ -418,7 +388,7 @@ const Landing = () => {
 
 								<TextField
 									{...register('email', {
-										required: 'Email id is required!',
+										required: 'Email is required!',
 										shouldFocus: true,
 									})}
 									name="email"
@@ -434,7 +404,7 @@ const Landing = () => {
 
 								<TextField
 									{...register('message', {
-										required: 'Message id is required!',
+										required: 'Message is required!',
 										shouldFocus: true,
 									})}
 									name="message"
@@ -483,6 +453,7 @@ const Landing = () => {
 							Afya Services LLC
 						</Link>
 						<span className="footer__description">info@afyaservices.us</span>
+						<span className="footer__description">www.afyaservices.us</span>
 						<span className="footer__description">Liability Partnership.</span>
 						<div>
 							<Link to="#" className="footer__social">
@@ -502,22 +473,22 @@ const Landing = () => {
 						<ul>
 							<li>
 								<Link to="#services" className="footer__link">
-									About us
+									Home
 								</Link>
 							</li>
 							<li>
 								<Link to="#" className="footer__link">
-									Blog
+									Explore
 								</Link>
 							</li>
 							<li>
 								<Link to="#about" className="footer__link">
-									Services
+									Why us?
 								</Link>
 							</li>
 							<li>
 								<Link to="#" className="footer__link">
-									Our Team
+									Services
 								</Link>
 							</li>
 						</ul>
@@ -533,12 +504,7 @@ const Landing = () => {
 							</li>
 							<li>
 								<Link to="#" className="footer__link">
-									Our Team
-								</Link>
-							</li>
-							<li>
-								<Link to="#" className="footer__link">
-									Privacy policy
+									Our policy
 								</Link>
 							</li>
 							<li>
@@ -550,9 +516,13 @@ const Landing = () => {
 					</div>
 
 					<div className="footer__content">
-						<h3 className="footer__title">Address</h3>
+						<h3 className="footer__title">Locate us</h3>
 						<ul>
-							<li>Liza Apartments</li>
+							<li>
+								<Link to="#" className="footer__link">
+									Locate us
+								</Link>
+							</li>
 							<li>Fax us at 401-340-1499</li>
 							<li>P.O. Box 02908</li>
 							<li>Rhode Island, United States</li>

@@ -1,10 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Typewriter from 'typewriter-effect';
 import ImageSlider from '../ImageSlider/ImageSlider';
 import { SliderData } from '../ImageSlider/SliderData';
 import { TextField } from '@material-ui/core';
+import * as Scroll from 'react-scroll';
 import { useForm } from 'react-hook-form';
 import AdornedButton from '../../utils/AdornedButton';
+import Medical from '../../images/clear-medical.png';
+import Diagnostic from '../../images/diagnostic-icon.png';
+import Pharmacy from '../../images/best-pharmacy.png';
+import Cardio from '../../images/cardio-monitoring.png';
+import Ambulance from '../../images/ambulance-service-icon.png';
+import XRay from '../../images/x-ray-icon.png';
 import './Landing.css';
 
 const Landing = () => {
@@ -36,6 +44,8 @@ const Landing = () => {
 		console.log(data);
 	};
 
+	const closeMobileMenu = () => setToggled(false);
+
 	return (
 		<>
 			{/* <!--========== SCROLL TOP ==========--> */}
@@ -59,48 +69,86 @@ const Landing = () => {
 					>
 						<ul className="nav-list">
 							<li className="nav-item">
-								<Link
-									to="/home"
+								<Scroll.Link
 									className={
 										scrollHeader
 											? 'nav-scroll-link active-link'
 											: 'nav-link active-link'
 									}
+									to="home"
+									smooth={true}
+									spy={true}
+									duration={300}
+									style={{ cursor: 'pointer' }}
+									onClick={closeMobileMenu}
 								>
-									Home
-								</Link>
+									home
+								</Scroll.Link>
 							</li>
 							<li className="nav-item">
-								<Link
-									to="/about"
+								<Scroll.Link
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
+									to="objective"
+									smooth={true}
+									spy={true}
+									duration={300}
+									style={{ cursor: 'pointer' }}
+									onClick={closeMobileMenu}
 								>
-									Explore
-								</Link>
+									explore
+								</Scroll.Link>
 							</li>
 							<li className="nav-item">
-								<Link
-									to="/services"
+								<Scroll.Link
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
+									to="why_us"
+									smooth={true}
+									spy={true}
+									duration={300}
+									style={{ cursor: 'pointer' }}
+									onClick={closeMobileMenu}
 								>
-									Why us?
-								</Link>
+									why us?
+								</Scroll.Link>
 							</li>
 							<li className="nav-item">
-								<Link
-									to="/blog"
+								<Scroll.Link
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
+									to="services"
+									smooth={true}
+									spy={true}
+									duration={300}
+									style={{ cursor: 'pointer' }}
+									onClick={closeMobileMenu}
 								>
-									Services
-								</Link>
+									services
+								</Scroll.Link>
 							</li>
 							<li className="nav-item">
-								<Link
-									to="/contact"
+								<Scroll.Link
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
+									to="policy"
+									smooth={true}
+									spy={true}
+									duration={300}
+									style={{ cursor: 'pointer' }}
+									onClick={closeMobileMenu}
 								>
-									Contact
-								</Link>
+									policy
+								</Scroll.Link>
+							</li>
+							<li className="nav-item">
+								<Scroll.Link
+									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
+									to="contact"
+									smooth={true}
+									spy={true}
+									duration={300}
+									style={{ cursor: 'pointer' }}
+									onClick={closeMobileMenu}
+								>
+									contact us
+								</Scroll.Link>
 							</li>
 
 							<li>
@@ -124,11 +172,19 @@ const Landing = () => {
 					</div>
 				</nav>
 			</div>
-			<section className="header-section section">
+			<section className="header-section section" id="home">
 				<div className="inner-header">
+					<h3>Your health care</h3>
 					<h3>
-						Your health care journey
-						<br /> starts here
+						{' '}
+						journey &nbsp;
+						<Typewriter
+							options={{
+								strings: ['starts', 'here.'],
+								autoStart: true,
+								loop: true,
+							}}
+						/>
 					</h3>
 					<p>Care In An Environment of excellence</p>
 					<ul>
@@ -143,7 +199,28 @@ const Landing = () => {
 
 			<div className="halfway-section">
 				<div className="halfway-content">
-					<h3>Halfway section</h3>
+					<div className="halfway-info">
+						<div className="halfway-card">
+							<h3>Emergency Cases</h3>
+							<p>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
+								deleniti eos nesciunt sequi maiores ipsum
+							</p>
+						</div>
+						<div className="halfway-card">
+							<h3>Accepting new Patients</h3>
+							<p>
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
+								deleniti eos nesciunt sequi maiores ipsum
+							</p>
+						</div>
+						<div className="halfway-card">
+							<h3>Opening Hours</h3>
+							<p>Mon - Fri 9am to 5pm</p>
+							<p>Sat 9am to 12pm</p>
+							<p>Extended hours by appointment ONLY.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -187,43 +264,44 @@ const Landing = () => {
 			</section>
 
 			{/* <!-- =====Why Us===== --> */}
-			<section class="features-main my-2">
+			<section className="features-main my-2" id="why_us">
 				<h1>Why us?</h1>
-				<div class="features-container grid grid-3">
-					<div class="card flex">
-						<i class="fas fa-film fa-3x"></i>
+				<div className="features-container grid grid-3">
+					<div className="card flex">
+						<img src={Medical} alt="clear-medical-records" />
 						<p>
 							Producing content that serves to inform, entertain and educate the
 							masses. Content that serves to show the best aspects of humanity.
 						</p>
 					</div>
-					<div class="card flex">
-						<i class="fas fa-network-wired fa-3x"></i>
+					<div className="card flex">
+						<img src={Pharmacy} alt="pharmacy" />
+
 						<p>
 							Directing content that is encouraging to our audiences and derives
 							the best form of pleasure and satisfaction.
 						</p>
 					</div>
-					<div class="card flex">
-						<i class="fas fa-camera-retro fa-3x"></i>
+					<div className="card flex">
+						<img src={Diagnostic} alt="diagnostic-icon" />
 						<p>
 							Mentoring young talent into becoming the best version of
 							themselves when it comes to acting.
 						</p>
 					</div>
-					<div class="card flex">
-						<i class="far fa-file-alt fa-3x"></i>
+					<div className="card flex">
+						<img src={Cardio} alt="cardio" />
 						<p>
 							To create campaigns that bring awareness to the masses through a
 							wide range of broadcast option.
 						</p>
 					</div>
-					<div class="card flex">
-						<i class="fas fa-podcast fa-3x"></i>
+					<div className="card flex">
+						<img src={Ambulance} alt="ambulance" />
 						<p>Mission statement. True, real and inspiring.</p>
 					</div>
-					<div class="card flex">
-						<i class="fas fa-radiation fa-3x"></i>
+					<div className="card flex">
+						<img src={XRay} alt="x-ray" />
 						<p>
 							Target audience. Young youths between the ages of 20-25 years.
 						</p>
@@ -232,7 +310,7 @@ const Landing = () => {
 			</section>
 
 			{/* <!--========== SERVICES ==========--> */}
-			<section className="menu section bd-container" id="menu">
+			<section className="menu section bd-container" id="services">
 				<span className="section-subtitle">services</span>
 				<h2 className="section-title">Our Medical Services</h2>
 
@@ -341,18 +419,19 @@ const Landing = () => {
 			</section>
 
 			{/* <!--========== CONTACT US ==========--> */}
-			<section class="contact section bd-container" id="contact">
-				<div class="contact__container bd-grid">
-					<div class="contact__data">
-						<span class="section-subtitle contact__initial">Let's talk</span>
-						<h2 class="section-title contact__initial">Contact us</h2>
-						<p class="contact__description">
+			<section className="contact section bd-container" id="contact">
+				<div className="contact__container bd-grid">
+					<div className="contact__data">
+						<span className="section-subtitle contact__initial">
+							Let's talk
+						</span>
+						<h2 className="section-title contact__initial">Contact us</h2>
+						<p className="contact__description">
 							Want to get in touch? We'd love to hear from you. Here is how you
 							can reach us...
 						</p>
 						<div className="call-button">
 							<AdornedButton
-								// fullWidth
 								disableElevation
 								size="large"
 								type="submit"
@@ -367,7 +446,7 @@ const Landing = () => {
 						</div>
 					</div>
 
-					<div class="contact__button">
+					<div className="contact__button">
 						<form onSubmit={handleSubmit(onSubmit)} className="login-form">
 							<div className="textField-container">
 								<TextField
@@ -472,24 +551,52 @@ const Landing = () => {
 						<h3 className="footer__title">Company</h3>
 						<ul>
 							<li>
-								<Link to="#services" className="footer__link">
+								<Scroll.Link
+									className="footer__link"
+									to="home"
+									smooth={true}
+									spy={true}
+									duration={300}
+									style={{ cursor: 'pointer' }}
+								>
 									Home
-								</Link>
+								</Scroll.Link>
 							</li>
 							<li>
-								<Link to="#" className="footer__link">
+								<Scroll.Link
+									className="footer__link"
+									to="objective"
+									smooth={true}
+									spy={true}
+									duration={300}
+									style={{ cursor: 'pointer' }}
+								>
 									Explore
-								</Link>
+								</Scroll.Link>
 							</li>
 							<li>
-								<Link to="#about" className="footer__link">
+								<Scroll.Link
+									className="footer__link"
+									to="why_us"
+									smooth={true}
+									spy={true}
+									duration={300}
+									style={{ cursor: 'pointer' }}
+								>
 									Why us?
-								</Link>
+								</Scroll.Link>
 							</li>
 							<li>
-								<Link to="#" className="footer__link">
+								<Scroll.Link
+									className="footer__link"
+									to="services"
+									smooth={true}
+									spy={true}
+									duration={300}
+									style={{ cursor: 'pointer' }}
+								>
 									Services
-								</Link>
+								</Scroll.Link>
 							</li>
 						</ul>
 					</div>
@@ -498,14 +605,28 @@ const Landing = () => {
 						<h3 className="footer__title">Support</h3>
 						<ul>
 							<li>
-								<Link to="#contact" className="footer__link">
+								<Scroll.Link
+									className="footer__link"
+									to="contact"
+									smooth={true}
+									spy={true}
+									duration={300}
+									style={{ cursor: 'pointer' }}
+								>
 									Contact us
-								</Link>
+								</Scroll.Link>
 							</li>
 							<li>
-								<Link to="#" className="footer__link">
-									Our policy
-								</Link>
+								<Scroll.Link
+									className="footer__link"
+									to="policy"
+									smooth={true}
+									spy={true}
+									duration={300}
+									style={{ cursor: 'pointer' }}
+								>
+									Policy
+								</Scroll.Link>
 							</li>
 							<li>
 								<Link to="#" className="footer__link">

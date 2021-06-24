@@ -274,45 +274,51 @@ const Landing = () => {
 						{/* <img src={Medical} alt="clear-medical-records" /> */}
 						<SuspenseImg alt="clear-medical-records" src={Medical} />
 						<p>
-							Producing content that serves to inform, entertain and educate the
-							masses. Content that serves to show the best aspects of humanity.
+							Afya Services LLC is a private practice that offers both primary
+							care and medication management to individuals 18 years of age and
+							above. Are symptoms of anxiety, depression and ADHD impacting your
+							daily life? Don't feel stuck and hopeless, I can help reduce the
+							barriers that you are facing.
 						</p>
 					</div>
 					<div className="card flex">
 						{/* <img src={Pharmacy} alt="pharmacy" /> */}
 						<SuspenseImg alt="pharmacy" src={Pharmacy} />
 						<p>
-							Directing content that is encouraging to our audiences and derives
-							the best form of pleasure and satisfaction.
+							Phina Mayu APRN has over 15 years of mental health expertise and
+							tailor’s individual treatment plan in Anxiety, Depression, ADHD
+							and MAT/Suboxone. I offer in office as well as Telehealth
+							services.
 						</p>
 					</div>
 					<div className="card flex">
 						{/* <img src={Diagnostic} alt="diagnostic-icon" /> */}
 						<SuspenseImg alt="diagnostic-icon" src={Diagnostic} />
 						<p>
-							Mentoring young talent into becoming the best version of
-							themselves when it comes to acting.
+							EVENING & WEEKEND HOURS also available. I diagnose, provide
+							medication management, and refer to therapists as needed.
 						</p>
 					</div>
 					<div className="card flex">
 						{/* <img src={Cardio} alt="cardio" /> */}
 						<SuspenseImg alt="cardio" src={Cardio} />
 						<p>
-							To create campaigns that bring awareness to the masses through a
-							wide range of broadcast option.
+							The 1st appointment usually lasts about 1 hour, whereby you get
+							diagnosed and educated then proceed with an individualized
+							treatment plan.
 						</p>
 					</div>
 					<div className="card flex">
 						{/* <img src={Ambulance} alt="ambulance" /> */}
 						<SuspenseImg alt="ambulance" src={Ambulance} />
-						<p>Mission statement. True, real and inspiring.</p>
+						<p>
+							Know where your resources are to respond quickly and effectively.
+						</p>
 					</div>
 					<div className="card flex">
 						{/* <img src={XRay} alt="x-ray" /> */}
 						<SuspenseImg alt="x-ray" src={XRay} />
-						<p>
-							Target audience. Young youths between the ages of 20-25 years.
-						</p>
+						<p>Follow-up appointments usually lasts about 1/2 half hour.</p>
 					</div>
 				</div>
 			</section>
@@ -331,7 +337,7 @@ const Landing = () => {
 						<div className="services-icon">
 							<i className="bx bx-plus-medical bx-md bx-spin-hover"></i>
 						</div>
-						<span className="services-subtitle">Medication</span>
+						<span className="services-subtitle">Medication Management</span>
 						<p className="services-description">
 							Create detail schedule and resources plan to meet client’s project
 							objective.
@@ -363,15 +369,16 @@ const Landing = () => {
 						</div>
 						<span className="services-subtitle">PEP/PrEP Services</span>
 						<p className="services-description">
-							Create detail schedule and resources plan to meet client’s project
-							objective.
+							PEP/PrEP, is an HIV prevention method in which people who don’t
+							have HIV take HIV medicine to reduce their risk of getting HIV if
+							they are exposed to the virus.
 						</p>
 					</div>
 					<div>
 						<div className="services-icon">
 							<i className="bx bx-pulse bx-md bx-spin-hover"></i>
 						</div>
-						<span className="services-subtitle">Preventative Services</span>
+						<span className="services-subtitle">Substance Use</span>
 						<p className="services-description">
 							Create detail schedule and resources plan to meet client’s project
 							objective.
@@ -381,10 +388,11 @@ const Landing = () => {
 						<div className="services-icon">
 							<i className="bx bx-donate-blood bx-md bx-spin-hover"></i>
 						</div>
-						<h3 className="services-subtitle">Medication</h3>
+						<h3 className="services-subtitle">Sleep or Insomnia</h3>
 						<p className="services-description">
-							Create detail schedule and resources plan to meet client’s project
-							objective.
+							Treatment depends on what's causing your insomnia. Sometimes, an
+							underlying cause, such as a medical condition or sleep disorder,
+							can be found and treated.
 						</p>
 					</div>
 				</div>
@@ -658,8 +666,9 @@ const Landing = () => {
 								</Link>
 							</li>
 							<li>Fax us at 401-340-1499</li>
-							<li>P.O. Box 02908</li>
-							<li>Rhode Island, United States</li>
+							<li>176 Toll Gate Road</li>
+							<li>Suite 302</li>
+							<li>Warwick, RI 02886</li>
 						</ul>
 					</div>
 				</div>

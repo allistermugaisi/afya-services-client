@@ -157,6 +157,11 @@
 }
 /* Header Section */
 
+#home.lazy {
+	background-image: none;
+	background-color: #f1f1fa;
+}
+
 .header-section {
 	position: relative;
 	height: 600px;

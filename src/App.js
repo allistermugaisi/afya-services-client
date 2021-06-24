@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import { Landing } from './components';
+import { Loading } from './Loading';
 import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 
@@ -26,17 +27,17 @@ const theme = createMuiTheme({
 
 function App() {
 	return (
-		<Suspense fallback={<div>Loading...</div>}>
-			<div className="App">
-				<ThemeProvider theme={theme}>
-					<Switch>
+		<div className="App">
+			<ThemeProvider theme={theme}>
+				<Switch>
+					<Suspense fallback={<Loading />}>
 						<Route exact path="/" component={Landing} />
-						{/* <Route path="/signin" component={Login} />
+					</Suspense>
+					{/* <Route path="/signin" component={Login} />
 						<Route path="/payment" component={Payment} /> */}
-					</Switch>
-				</ThemeProvider>
-			</div>
-		</Suspense>
+				</Switch>
+			</ThemeProvider>
+		</div>
 	);
 }
 

@@ -105,3 +105,12 @@ ul {
 a {
 	text-decoration: none;
 }
+
+.wait-for-loading > i {
+	position: fixed;
+	top: 45%;
+	left: 45%;
+	opacity: 0.7;
+	z-index: 5000;
+	color: var(--first-color);
+}

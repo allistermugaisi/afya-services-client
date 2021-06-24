@@ -6,6 +6,8 @@ import { SliderData } from '../ImageSlider/SliderData';
 import { TextField } from '@material-ui/core';
 import * as Scroll from 'react-scroll';
 import { useForm } from 'react-hook-form';
+import { SuspenseImg } from '../SuspenseImage';
+
 import AdornedButton from '../../utils/AdornedButton';
 import Medical from '../../images/clear-medical.png';
 import Diagnostic from '../../images/diagnostic-icon.png';
@@ -203,15 +205,16 @@ const Landing = () => {
 						<div className="halfway-card">
 							<h3>Emergency Cases</h3>
 							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-								deleniti eos nesciunt sequi maiores ipsum
+								If you're experiencing an emergency, or looking for emergency
+								response, please contact us via the chat or phone numbers below.
 							</p>
 						</div>
 						<div className="halfway-card">
 							<h3>Accepting new Patients</h3>
 							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab
-								deleniti eos nesciunt sequi maiores ipsum
+								In light of public health concerns, protecting the health of our
+								patients while also providing healthcare services is our top
+								priority.
 							</p>
 						</div>
 						<div className="halfway-card">
@@ -268,40 +271,45 @@ const Landing = () => {
 				<h1>Why us?</h1>
 				<div className="features-container grid grid-3">
 					<div className="card flex">
-						<img src={Medical} alt="clear-medical-records" />
+						{/* <img src={Medical} alt="clear-medical-records" /> */}
+						<SuspenseImg alt="clear-medical-records" src={Medical} />
 						<p>
 							Producing content that serves to inform, entertain and educate the
 							masses. Content that serves to show the best aspects of humanity.
 						</p>
 					</div>
 					<div className="card flex">
-						<img src={Pharmacy} alt="pharmacy" />
-
+						{/* <img src={Pharmacy} alt="pharmacy" /> */}
+						<SuspenseImg alt="pharmacy" src={Pharmacy} />
 						<p>
 							Directing content that is encouraging to our audiences and derives
 							the best form of pleasure and satisfaction.
 						</p>
 					</div>
 					<div className="card flex">
-						<img src={Diagnostic} alt="diagnostic-icon" />
+						{/* <img src={Diagnostic} alt="diagnostic-icon" /> */}
+						<SuspenseImg alt="diagnostic-icon" src={Diagnostic} />
 						<p>
 							Mentoring young talent into becoming the best version of
 							themselves when it comes to acting.
 						</p>
 					</div>
 					<div className="card flex">
-						<img src={Cardio} alt="cardio" />
+						{/* <img src={Cardio} alt="cardio" /> */}
+						<SuspenseImg alt="cardio" src={Cardio} />
 						<p>
 							To create campaigns that bring awareness to the masses through a
 							wide range of broadcast option.
 						</p>
 					</div>
 					<div className="card flex">
-						<img src={Ambulance} alt="ambulance" />
+						{/* <img src={Ambulance} alt="ambulance" /> */}
+						<SuspenseImg alt="ambulance" src={Ambulance} />
 						<p>Mission statement. True, real and inspiring.</p>
 					</div>
 					<div className="card flex">
-						<img src={XRay} alt="x-ray" />
+						{/* <img src={XRay} alt="x-ray" /> */}
+						<SuspenseImg alt="x-ray" src={XRay} />
 						<p>
 							Target audience. Young youths between the ages of 20-25 years.
 						</p>
@@ -410,10 +418,15 @@ const Landing = () => {
 						</Link> */}
 					</div>
 
-					<img
-						src="https://afyaservices.us/wp-content/uploads/2020/06/happy1.jpg"
+					{/* <img
+						src="https://images.pexels.com/photos/1666073/pexels-photo-1666073.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
 						alt="policy"
 						className="policy-img"
+					/> */}
+					<SuspenseImg
+						alt="policy"
+						className="policy-img"
+						src="https://images.pexels.com/photos/1666073/pexels-photo-1666073.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
 					/>
 				</div>
 			</section>

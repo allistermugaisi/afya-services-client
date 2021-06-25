@@ -206,7 +206,8 @@ const Landing = () => {
 							<h3>Emergency Cases</h3>
 							<p>
 								If you're experiencing an emergency, or looking for emergency
-								response, please contact us via the chat or phone numbers below.
+								response, please call the office and if we are not open, go to
+								the ER immediately.
 							</p>
 						</div>
 						<div className="halfway-card">
@@ -294,10 +295,7 @@ const Landing = () => {
 					<div className="card flex">
 						{/* <img src={Diagnostic} alt="diagnostic-icon" /> */}
 						<SuspenseImg alt="diagnostic-icon" src={Diagnostic} />
-						<p>
-							EVENING & WEEKEND HOURS also available. I diagnose, provide
-							medication management, and refer to therapists as needed.
-						</p>
+						<p>Evening & Weekend Hours also available by appointment only.</p>
 					</div>
 					<div className="card flex">
 						{/* <img src={Cardio} alt="cardio" /> */}
@@ -326,10 +324,10 @@ const Landing = () => {
 			{/* <!--========== SERVICES ==========--> */}
 			<section className="menu section bd-container" id="services">
 				<span className="section-subtitle">services</span>
-				<h2 className="section-title">Our Medical Services</h2>
+				<h2 className="section-title">Our Healthcare Services</h2>
 
 				<h3 className="section-subtitle">
-					Explore our Caring & Premium Medical Services
+					Explore our Caring & Premium Healthcare Services
 				</h3>
 
 				<div className="menu__container bd-grid">
@@ -339,8 +337,8 @@ const Landing = () => {
 						</div>
 						<span className="services-subtitle">Medication Management</span>
 						<p className="services-description">
-							Assess your medication system and identify risk points. · Reduce
-							medication errors. · Improve patient outcomes and your health.
+							Assess your medication system and identify risk points. Reduce
+							medication errors. Improve patient outcomes and your health.
 						</p>
 					</div>
 					<div>

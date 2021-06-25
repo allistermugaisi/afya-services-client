@@ -339,8 +339,8 @@ const Landing = () => {
 						</div>
 						<span className="services-subtitle">Medication Management</span>
 						<p className="services-description">
-							Create detail schedule and resources plan to meet client’s project
-							objective.
+							Assess your medication system and identify risk points. · Reduce
+							medication errors. · Improve patient outcomes and your health.
 						</p>
 					</div>
 					<div>
@@ -349,8 +349,9 @@ const Landing = () => {
 						</div>
 						<span className="services-subtitle">Men's health</span>
 						<p className="services-description">
-							Create detail schedule and resources plan to meet client’s project
-							objective.
+							Men need to pay attention to their health, they also need to know
+							where to go for help.When it comes to prevention and early
+							detection, men's health often takes a back seat to women's health.
 						</p>
 					</div>
 					<div>
@@ -359,8 +360,9 @@ const Landing = () => {
 						</div>
 						<span className="services-subtitle">STI Treatment</span>
 						<p className="services-description">
-							Create detail schedule and resources plan to meet client’s project
-							objective.
+							Effective treatment is currently available for several STIs.
+							Symptoms or disease due to the incurable viral infections can be
+							reduced or modified through treatment.
 						</p>
 					</div>
 					<div>
@@ -380,8 +382,9 @@ const Landing = () => {
 						</div>
 						<span className="services-subtitle">Substance Use</span>
 						<p className="services-description">
-							Create detail schedule and resources plan to meet client’s project
-							objective.
+							Enabling patients to cease substance abuse in order to avoid the
+							psychological, legal, financial, social and physical consequences
+							for purposes of reintegration back into workplace and the society.
 						</p>
 					</div>
 					<div>

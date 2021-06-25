@@ -553,7 +553,9 @@ const Landing = () => {
 						<Link to="/" className="footer__logo">
 							Afya Services LLC
 						</Link>
-						<span className="footer__description">info@afyaservices.us</span>
+						<span className="footer__description">
+							afyaservicesllc@gmail.com
+						</span>
 						<span className="footer__description">www.afyaservices.us</span>
 						<span className="footer__description">Liability Partnership.</span>
 						<div>

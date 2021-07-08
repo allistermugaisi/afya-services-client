@@ -1,8 +1,8 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-// import { Landing } from './components';
-import { Loading } from './Loading';
+import { Landing } from './components';
+import { Loading } from './utils/useLoading';
 import { ThemeProvider } from '@material-ui/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 
@@ -25,16 +25,13 @@ const theme = createMuiTheme({
 	},
 });
 
-// Code-splitting
-const Homepage = lazy(() => import('./components/Landing/Landing'));
-
 function App() {
 	return (
 		<div className="App">
 			<ThemeProvider theme={theme}>
 				<Switch>
 					<Suspense fallback={<Loading />}>
-						<Route exact path="/" component={Homepage} />
+						<Route exact path="/" component={Landing} />
 					</Suspense>
 					{/* <Route path="/signin" component={Login} />
 						<Route path="/payment" component={Payment} /> */}

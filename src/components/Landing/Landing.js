@@ -72,12 +72,9 @@ const Landing = () => {
 						<ul className="nav-list">
 							<li className="nav-item">
 								<Scroll.Link
-									className={
-										scrollHeader
-											? 'nav-scroll-link active-link'
-											: 'nav-link active-link'
-									}
+									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 									to="home"
+									activeClass="active-link"
 									smooth={true}
 									spy={true}
 									duration={300}
@@ -91,6 +88,7 @@ const Landing = () => {
 								<Scroll.Link
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 									to="objective"
+									activeClass="active-link"
 									smooth={true}
 									spy={true}
 									duration={300}
@@ -104,6 +102,7 @@ const Landing = () => {
 								<Scroll.Link
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 									to="why_us"
+									activeClass="active-link"
 									smooth={true}
 									spy={true}
 									duration={300}
@@ -117,6 +116,7 @@ const Landing = () => {
 								<Scroll.Link
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 									to="services"
+									activeClass="active-link"
 									smooth={true}
 									spy={true}
 									duration={300}
@@ -130,6 +130,7 @@ const Landing = () => {
 								<Scroll.Link
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 									to="policy"
+									activeClass="active-link"
 									smooth={true}
 									spy={true}
 									duration={300}
@@ -143,6 +144,7 @@ const Landing = () => {
 								<Scroll.Link
 									className={scrollHeader ? 'nav-scroll-link' : 'nav-link'}
 									to="contact"
+									activeClass="active-link"
 									smooth={true}
 									spy={true}
 									duration={300}
@@ -175,14 +177,12 @@ const Landing = () => {
 				</nav>
 			</div>
 			<section className="header-section section" id="home">
-				<div className="inner-header">
+				<div className="inner-header bd-container">
 					<h3>Your health care</h3>
 					<h3>
-						{' '}
-						journey &nbsp;
 						<Typewriter
 							options={{
-								strings: ['starts', 'here.'],
+								strings: ['journey starts here.'],
 								autoStart: true,
 								loop: true,
 							}}

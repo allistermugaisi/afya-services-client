@@ -1,8 +1,7 @@
-import logo from '../../images/main-logo.jpeg';
-
 export const SliderData = [
 	{
-		image: `${logo}`,
+		image:
+			'https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1630410834/main-logo_nfvoor.jpg',
 	},
 	{
 		image:

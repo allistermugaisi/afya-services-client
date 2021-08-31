@@ -165,7 +165,7 @@
 .header-section {
 	position: relative;
 	height: 600px;
-	background: url('../../images/landing.jpg');
+	background: url('https://res.cloudinary.com/dgisuffs0/image/upload/q_auto/v1630410837/landing_hozfrc.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	/* transform: scaleX(-1); */

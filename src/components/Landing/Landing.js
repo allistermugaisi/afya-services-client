@@ -420,7 +420,7 @@ const Landing = () => {
 							Cancellation Policy: We request 24 hours in advance for
 							appointment cancellation.
 							<br />
-							We do not provide long term plan management.
+							We do not provide long term pain management.
 						</p>
 						{/* <Link to="/policy" className="button">
 							Explore Policy

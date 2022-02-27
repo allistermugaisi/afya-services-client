@@ -1,9 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import ImageSlider from '../ImageSlider/ImageSlider';
 import { SliderData } from '../ImageSlider/SliderData';
-import { TextField } from '@material-ui/core';
+import {
+	TextField,
+	Dialog,
+	DialogContent,
+	DialogContentText,
+	DialogTitle,
+	DialogActions,
+	Button,
+} from '@mui/material';
 import * as Scroll from 'react-scroll';
 import { useForm } from 'react-hook-form';
 import { SuspenseImg } from '../SuspenseImage';
@@ -18,9 +26,13 @@ import XRay from '../../images/x-ray-icon.png';
 import './Landing.css';
 
 const Landing = () => {
+	const descriptionElementRef = useRef(null);
+
 	const [toggled, setToggled] = useState(false);
 	const [scrollHeader, setScrollHeader] = useState(false);
 	const [buttonLoading, setButtonLoading] = useState(false);
+	const [open, setOpen] = useState(false);
+	const [scroll, setScroll] = useState('paper');
 
 	const {
 		register,
@@ -47,6 +59,24 @@ const Landing = () => {
 	};
 
 	const closeMobileMenu = () => setToggled(false);
+
+	const handleClickOpen = (scrollType) => () => {
+		setOpen(true);
+		setScroll(scrollType);
+	};
+
+	const handleClose = () => {
+		setOpen(false);
+	};
+
+	useEffect(() => {
+		if (open) {
+			const { current: descriptionElement } = descriptionElementRef;
+			if (descriptionElement !== null) {
+				descriptionElement.focus();
+			}
+		}
+	}, [open]);
 
 	return (
 		<>
@@ -190,10 +220,16 @@ const Landing = () => {
 					</h3>
 					<p>Care In An Environment of excellence</p>
 					<ul>
-						<li className="sign-button">
-							<Link to="/" className="button">
+						<li>
+							{/* <Link to="/" className="button">
 								Get started
-							</Link>
+							</Link> */}
+							<Button
+								sx={{ width: '20%', backgroundColor: '#00db1a', color: '#fff' }}
+								onClick={handleClickOpen('paper')}
+							>
+								Read More
+							</Button>
 						</li>
 					</ul>
 				</div>
@@ -515,7 +551,7 @@ const Landing = () => {
 									margin="normal"
 									multiline
 									rows={4}
-									rowsMax={4}
+									rowsmax={4}
 									autoComplete="off"
 									fullWidth
 									error={errors?.message ? true : false}
@@ -680,6 +716,95 @@ const Landing = () => {
 					&#169; Copyright {new Date().getFullYear()}. All rights reserved.
 				</p>
 			</footer>
+			<Dialog
+				open={open}
+				onClose={handleClose}
+				scroll={scroll}
+				aria-labelledby="scroll-dialog-title"
+				aria-describedby="scroll-dialog-description"
+			>
+				<DialogTitle id="scroll-dialog-title">
+					Shannan Victorino, MSN, APRN, PMHNP-BC
+				</DialogTitle>
+				<DialogContent dividers={scroll === 'paper'}>
+					<DialogContentText
+						id="scroll-dialog-description"
+						ref={descriptionElementRef}
+						tabIndex={-1}
+					>
+						Everyone wants to be understood and reach their full potential. As a
+						board-certified psychiatric practitioner, I intend on empowering
+						patients to manage the full spectrum of emotions that life has to
+						offer. Learning about how the nervous system creates dissonance
+						should help dissolve judgment and self-criticism. I want to
+						facilitate your own inner healing intelligence by providing
+						empowering resources. In the process, you will evolve with greater
+						fortitude and sense of purpose. I use common-sense, compassionate,
+						evidence-based methods to help you achieve transformation toward
+						your own personal evolution.
+						<h4>EMDR</h4>
+						EMDR (Eye Movement Desensitization and Reprocessing) uses various
+						bilateral stimulation techniques to help facilitate processing of
+						traumatic emotions that were too overwhelming at the time of the
+						event for the brain to integrate appropriately. Emotional reactions
+						and physical symptoms are activated memory networks. If an event is
+						not appropriately processed by our consciousness it can be held in
+						our bodies and/or mind and become triggered by a similar event in
+						the future. Sometimes the participant is unaware of the original
+						event being triggered but using specific techniques unique to EMDR
+						we are able to access these “touch stone” memories thereby
+						processing and releasing any held memories so that they no longer
+						hold a charge in our nervous system. Bilateral stimulation
+						techniques facilitate communication between the left and right
+						hemispheres of the brain activating the information processing
+						system while in a safe and comfortable environment. This results in
+						the relief of PTSD symptoms, anxiety and associated mental
+						disorders, and often diminishes the need for psychotropic remedies.
+						<h4>Psychedelic-Assisted Psychotherapy</h4>
+						Evidence supports ketamine-assisted psychotherapy (KAP) as an
+						effective method for addressing many mental and emotional
+						disturbances. It also facilitates an expansion of consciousness
+						allowing valuable insights regarding the nature of reality. KAP has
+						been successful in treating addictions including nicotine and
+						alcohol. KAP is also used to address anxiety, PTSD, uncover
+						repressed traumas and depression. The word ‘psychedelic’ literally
+						means ‘mind-manifesting'. Treatment is highly individualized to meet
+						the participant's goals. The best way to describe how this modality
+						results in healing is by imagining that it allows you to be awake in
+						your dreams. It is well known that the dream state is often
+						comprised of unresolved, subconscious material that had not been
+						processed during the day or throughout your past. This is another
+						example of the natural healing mechanism of the psyche, (we are
+						amazing machinery)! Our natural healing intelligence is sneaky
+						enough to process this stuff without our (conscious) consent or even
+						recollection, while we are in deep sleep. By allowing the
+						participant to be awake in their dream, they have the opportunity to
+						confront traumas in a way that no other psychotherapy could
+						facilitate in an ordinary state of consciousness. The non-ordinary
+						state of consciousness (NOSC) that ketamine produces allows you to
+						confront repressed or preverbal memories without the usual emotional
+						charge attached to these events. After the psychedelic session is
+						complete, there are several therapy sessions to integrate the
+						experience so that long-lasting change is created. The previously
+						disturbing event no longer holds an emotional charge after these new
+						insights are integrated. The participant then feels relief, often
+						described as feeling “lighter”, as if there was a burden released.
+						This is a successful and miraculous, transformative experience which
+						allows the participant to move on with their lives without the need
+						for daily medication to suppress emotions that want to be addressed
+						and released, as nature intended.
+						<h4>Pediatric Psychiatry</h4>
+						We offer several options to children who need assistance in managing
+						their emotions, and to parents who need guidance in understanding
+						their child's situation. We create a more coherent living
+						environment, suitable to support the emotional development of the
+						child.
+					</DialogContentText>
+				</DialogContent>
+				<DialogActions>
+					<Button onClick={handleClose}>Close</Button>
+				</DialogActions>
+			</Dialog>
 		</>
 	);
 };

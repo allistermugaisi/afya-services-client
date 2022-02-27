@@ -3,10 +3,9 @@ import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import { Landing } from './components';
 import { Loading } from './utils/useLoading';
-import { ThemeProvider } from '@material-ui/styles';
-import { createMuiTheme } from '@material-ui/core/styles';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
-const theme = createMuiTheme({
+const theme = createTheme({
 	palette: {
 		primary: {
 			main: '#069c54',

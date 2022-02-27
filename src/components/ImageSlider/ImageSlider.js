@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { SliderData } from './SliderData';
-import { Container } from '@material-ui/core';
+import { Container } from '@mui/material';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 // import { SuspenseImg } from '../SuspenseImage';
 

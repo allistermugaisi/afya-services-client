@@ -225,7 +225,11 @@ const Landing = () => {
 								Get started
 							</Link> */}
 							<Button
-								sx={{ width: '20%', backgroundColor: '#00db1a', color: '#fff' }}
+								sx={{
+									minWidth: '150px',
+									backgroundColor: '#00db1a',
+									color: '#fff',
+								}}
 								onClick={handleClickOpen('paper')}
 							>
 								Read More

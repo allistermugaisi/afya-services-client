@@ -454,8 +454,7 @@ const Landing = () => {
 							Lateness Policy: <strong>15 minutes</strong> accepted after your
 							already scheduled appointment.
 							<br />
-							No show-Policy: <strong>First 2</strong> no shows are Free.{' '}
-							<strong>3rd No Show will be charged $ 30 dollars</strong>.
+							No show-Policy will be charged <strong> $40 dollars</strong>.
 							<br />
 							Cancellation Policy: We request 24 hours in advance for
 							appointment cancellation.

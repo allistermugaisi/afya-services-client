@@ -221,10 +221,14 @@ const Landing = () => {
 					<p>Care In An Environment of excellence</p>
 					<ul>
 						<li>
-							{/* <Link to="/" className="button">
+							<Scroll.Link
+								to="objective"
+								className="button"
+								style={{ cursor: 'pointer' }}
+							>
 								Get started
-							</Link> */}
-							<Button
+							</Scroll.Link>
+							{/* <Button
 								sx={{
 									minWidth: '150px',
 									backgroundColor: '#00db1a',
@@ -233,7 +237,7 @@ const Landing = () => {
 								onClick={handleClickOpen('paper')}
 							>
 								Read More
-							</Button>
+							</Button> */}
 						</li>
 					</ul>
 				</div>
@@ -367,7 +371,7 @@ const Landing = () => {
 				<h2 className="section-title">Our Healthcare Services</h2>
 
 				<h3 className="section-subtitle">
-					Explore our Caring & Premium Healthcare Services
+					Explore Shannan Victorino Caring & Premium Healthcare Services
 				</h3>
 
 				<div className="menu__container bd-grid">
@@ -375,39 +379,46 @@ const Landing = () => {
 						<div className="services-icon">
 							<i className="bx bx-plus-medical bx-md bx-spin-hover"></i>
 						</div>
-						<span className="services-subtitle">Medication Management</span>
+						<span className="services-subtitle">Specializes in EMDR</span>
 						<p className="services-description">
-							Assess your medication system and identify risk points. Reduce
-							medication errors. Improve patient outcomes and your health.
+							EMDR (Eye Movement Desensitization and Reprocessing) uses various
+							bilateral stimulation techniques to help facilitate the processing
+							of traumatic emotions that were too overwhelming at the time of
+							the event for the brain to integrate appropriately.
 						</p>
 					</div>
 					<div>
 						<div className="services-icon">
 							<i className="bx bx-health bx-md bx-spin-hover"></i>
 						</div>
-						<span className="services-subtitle">Men's health</span>
+						<span className="services-subtitle">
+							Psychedelic-Assisted Psychotherapy
+						</span>
 						<p className="services-description">
-							Men need to pay attention to their health, they also need to know
-							where to go for help.When it comes to prevention and early
-							detection, men's health often takes a back seat to women's health.
+							Evidence supports ketamine-assisted psychotherapy (KAP) as an
+							effective method for addressing many mental and emotional
+							disturbances. Treatment is highly individualized to meet the
+							participant's goals.
 						</p>
 					</div>
 					<div>
 						<div className="services-icon">
 							<i className="bx bx-dna bx-md bx-spin-hover"></i>
 						</div>
-						<span className="services-subtitle">STI Treatment</span>
+						<span className="services-subtitle">Pediatric Psychiatry</span>
 						<p className="services-description">
-							Effective treatment is currently available for several STIs.
-							Symptoms or disease due to the incurable viral infections can be
-							reduced or modified through treatment.
+							Children who need assistance in managing their emotions, and to
+							parents who need guidance in understanding their child's
+							situation. We create a more coherent living environment, suitable
+							to support the emotional development of the child.
 						</p>
 					</div>
-					<div>
+
+					{/* <div>
 						<div className="services-icon">
 							<i className="bx bxs-capsule bx-md bx-spin-hover"></i>
 						</div>
-						<span className="services-subtitle">PEP/PrEP Services</span>
+						<span className="services-subtitle">Pediatric Psychiatry</span>
 						<p className="services-description">
 							PEP/PrEP, is an HIV prevention method in which people who don’t
 							have HIV take HIV medicine to reduce their risk of getting HIV if
@@ -435,7 +446,26 @@ const Landing = () => {
 							underlying cause, such as a medical condition or sleep disorder,
 							can be found and treated.
 						</p>
-					</div>
+					</div> */}
+				</div>
+				<div
+					style={{
+						display: 'flex',
+						justifyContent: 'center',
+						width: '100%',
+						marginTop: '2rem',
+					}}
+				>
+					<Button
+						sx={{
+							minWidth: '150px',
+							backgroundColor: '#00db1a',
+							color: '#fff',
+						}}
+						onClick={handleClickOpen('paper')}
+					>
+						Read More
+					</Button>
 				</div>
 			</section>
 

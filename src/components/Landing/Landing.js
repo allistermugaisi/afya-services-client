@@ -284,7 +284,9 @@ const Landing = () => {
 						<p className="objective-description">
 							Afya is derived from a Swahili word that means “health” Afya
 							Services LLC was founded by CEO Phina Mayu, a Nurse Practitioner
-							specializing in Adult-Geriatric population.
+							specializing in Adult-Geriatric population. Afya now offers
+							Pediatric Psychiatry, EMDR and Psychedelic-Assisted Psychotherapy
+							(KAPS)
 						</p>
 					</div>
 
@@ -292,10 +294,10 @@ const Landing = () => {
 						<i className="fas fa-bullseye fa-3x"></i>
 						<h3 className="objective-title">Vision</h3>
 						<p className="objective-description">
-							Our vision is to provide our clients with an “I am assured”
-							experience when offering healthcare services. We are destined to
-							provide preventative services and check-up services, to
-							immunizations to all adults ages 18 years and above.
+							Our vision is to provide our clients with high quality
+							evidence-based care. We are destined to provide preventative
+							services and medication management to children and adults of all
+							ages.
 						</p>
 					</div>
 
@@ -320,9 +322,10 @@ const Landing = () => {
 						<SuspenseImg alt="clear-medical-records" src={Medical} />
 						<p>
 							Afya Services LLC is a private practice that offers both primary
-							care and medication management to individuals 18 years of age and
-							above. Are symptoms of anxiety, depression and ADHD impacting your
-							daily life? Don't feel stuck and hopeless, I can help reduce the
+							care and medication management to children and adults of all ages.
+							We also specialize in EMDR and Psychedelic-Assisted Psychotherapy
+							(KAPS) Are symptoms of anxiety, depression and ADHD impacting your
+							daily life? Don't feel stuck and hopeless, we can help reduce the
 							barriers that you are facing.
 						</p>
 					</div>
@@ -332,8 +335,15 @@ const Landing = () => {
 						<p>
 							Phina Mayu APRN has over 15 years of mental health expertise and
 							tailor’s individual treatment plan in Anxiety, Depression, ADHD
-							and MAT/Suboxone. I offer in office as well as Telehealth
-							services.
+							and MAT/Suboxone.
+							<br /> Shannan Victorino board certified PMHNP-C. She focuses on
+							empowering patients to manage their full spectrum of emotions by
+							facilitating inner healing via evidence-based empowering
+							resources. <br />
+							Shannan is compassionate and will walk with you to achieve your
+							own personal evolution. Shannan offers above services as well as
+							Pediatric Psychiatry, EMDR and Psychedelic-Assisted Psychotherapy
+							(KAPS). We offer office visits as well as Telehealth services.
 						</p>
 					</div>
 					<div className="card flex">

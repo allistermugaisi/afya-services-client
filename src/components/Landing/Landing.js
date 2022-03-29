@@ -32,7 +32,7 @@ const Landing = () => {
 	const [scrollHeader, setScrollHeader] = useState(false);
 	const [buttonLoading, setButtonLoading] = useState(false);
 	const [open, setOpen] = useState(false);
-	const [scroll, setScroll] = useState('paper');
+	const [scroll] = useState('paper');
 
 	const {
 		register,

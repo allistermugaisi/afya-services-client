@@ -397,12 +397,12 @@ const Landing = () => {
 							<i className="bx bx-plus-medical bx-md bx-spin-hover"></i>
 						</div>
 						<span className="services-subtitle">Specializes in EMDR</span>
-						<p className="services-description">
+						{/* <p className="services-description">
 							EMDR (Eye Movement Desensitization and Reprocessing) uses various
 							bilateral stimulation techniques to help facilitate the processing
 							of traumatic emotions that were too overwhelming at the time of
 							the event for the brain to integrate appropriately.
-						</p>
+						</p> */}
 					</div>
 					<div>
 						<div className="services-icon">
@@ -411,24 +411,24 @@ const Landing = () => {
 						<span className="services-subtitle">
 							Psychedelic-Assisted Psychotherapy
 						</span>
-						<p className="services-description">
+						{/* <p className="services-description">
 							Evidence supports ketamine-assisted psychotherapy (KAP) as an
 							effective method for addressing many mental and emotional
 							disturbances. Treatment is highly individualized to meet the
 							participant's goals.
-						</p>
+						</p> */}
 					</div>
 					<div>
 						<div className="services-icon">
 							<i className="bx bx-dna bx-md bx-spin-hover"></i>
 						</div>
 						<span className="services-subtitle">Pediatric Psychiatry</span>
-						<p className="services-description">
+						{/* <p className="services-description">
 							Children who need assistance in managing their emotions, and to
 							parents who need guidance in understanding their child's
 							situation. We create a more coherent living environment, suitable
 							to support the emotional development of the child.
-						</p>
+						</p> */}
 					</div>
 
 					{/* <div>
@@ -465,7 +465,7 @@ const Landing = () => {
 						</p>
 					</div> */}
 				</div>
-				<div
+				{/* <div
 					style={{
 						display: 'flex',
 						justifyContent: 'center',
@@ -483,7 +483,7 @@ const Landing = () => {
 					>
 						Read More
 					</Button>
-				</div>
+				</div> */}
 			</section>
 
 			<section className="menu section bd-container" id="services">

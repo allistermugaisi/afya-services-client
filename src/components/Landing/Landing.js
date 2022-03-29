@@ -60,10 +60,10 @@ const Landing = () => {
 
 	const closeMobileMenu = () => setToggled(false);
 
-	const handleClickOpen = (scrollType) => () => {
-		setOpen(true);
-		setScroll(scrollType);
-	};
+	// const handleClickOpen = (scrollType) => () => {
+	// 	setOpen(true);
+	// 	setScroll(scrollType);
+	// };
 
 	const handleClose = () => {
 		setOpen(false);

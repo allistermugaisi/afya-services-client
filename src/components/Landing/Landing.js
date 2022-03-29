@@ -335,8 +335,15 @@ const Landing = () => {
 						<p>
 							Phina Mayu APRN has over 15 years of mental health expertise and
 							tailor’s individual treatment plan in Anxiety, Depression, ADHD
-							and MAT/Suboxone.
-							<br /> Shannan Victorino board certified PMHNP-C. She focuses on
+							and MAT/Suboxone. I offer in office as well as Telehealth
+							services.
+						</p>
+					</div>
+					<div className="card flex">
+						{/* <img src={Pharmacy} alt="pharmacy" /> */}
+						<SuspenseImg alt="pharmacy" src={Pharmacy} />
+						<p>
+							Shannan Victorino board certified PMHNP-C. She focuses on
 							empowering patients to manage their full spectrum of emotions by
 							facilitating inner healing via evidence-based empowering
 							resources. <br />
@@ -476,6 +483,84 @@ const Landing = () => {
 					>
 						Read More
 					</Button>
+				</div>
+			</section>
+
+			<section className="menu section bd-container" id="services">
+				<span className="section-subtitle">more services offered</span>
+				<h2 className="section-title">Other Healthcare Services</h2>
+
+				<h3 className="section-subtitle">
+					Other Caring & Premium Healthcare Services
+				</h3>
+
+				<div className="menu__container bd-grid">
+					<div>
+						<div className="services-icon">
+							<i className="bx bx-plus-medical bx-md bx-spin-hover"></i>
+						</div>
+						<span className="services-subtitle">Medication Management</span>
+						<p className="services-description">
+							Assess your medication system and identify risk points. Reduce
+							medication errors. Improve patient outcomes and your health.
+						</p>
+					</div>
+					<div>
+						<div className="services-icon">
+							<i className="bx bx-pulse bx-md bx-spin-hover"></i>
+						</div>
+						<span className="services-subtitle">Substance Use</span>
+						<p className="services-description">
+							Enabling patients to cease substance abuse in order to avoid the
+							psychological, legal, financial, social and physical consequences
+							for purposes of reintegration back into workplace and the society.
+						</p>
+					</div>
+					<div>
+						<div className="services-icon">
+							<i className="bx bx-donate-blood bx-md bx-spin-hover"></i>
+						</div>
+						<span className="services-subtitle">Sleep or Insomnia</span>
+						<p className="services-description">
+							Treatment depends on what's causing your insomnia. Sometimes, an
+							underlying cause, such as a medical condition or sleep disorder,
+							can be found and treated.
+						</p>
+					</div>
+
+					{/* <div>
+						<div className="services-icon">
+							<i className="bx bxs-capsule bx-md bx-spin-hover"></i>
+						</div>
+						<span className="services-subtitle">Pediatric Psychiatry</span>
+						<p className="services-description">
+							PEP/PrEP, is an HIV prevention method in which people who don’t
+							have HIV take HIV medicine to reduce their risk of getting HIV if
+							they are exposed to the virus.
+						</p>
+					</div>
+					<div>
+						<div className="services-icon">
+							<i className="bx bx-pulse bx-md bx-spin-hover"></i>
+						</div>
+						<span className="services-subtitle">Substance Use</span>
+						<p className="services-description">
+							Enabling patients to cease substance abuse in order to avoid the
+							psychological, legal, financial, social and physical consequences
+							for purposes of reintegration back into workplace and the society.
+						</p>
+					</div>
+					<div>
+						<div className="services-icon">
+							<i className="bx bx-donate-blood bx-md bx-spin-hover"></i>
+						</div>
+						<h3 className="services-subtitle">Sleep or Insomnia</h3>
+						<p className="services-description">
+							Treatment depends on what's causing your insomnia. Sometimes, an
+							underlying cause, such as a medical condition or sleep disorder,
+							can be found and treated.
+						</p>
+					</div> */}
 				</div>
 			</section>
 
